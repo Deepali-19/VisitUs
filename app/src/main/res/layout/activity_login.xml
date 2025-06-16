@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_gradient"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginTop="140dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_bg"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Done"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF6B6B"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have any account? Sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>
