@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_gradient"
-    android:padding="24dp">
-
+    tools:context=".loginActivity2"
+    android:background="@drawable/edittext_bg"
+    >
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Username"
-        android:background="@drawable/edittext_bg"
+        android:drawableStart="@drawable/person_svgrepo_com"
+        android:background="@drawable/rounded_edittext"
         android:layout_marginTop="140dp"
         android:padding="10dp"/>
 
@@ -19,8 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Password"
+        android:drawableStart="@drawable/lock_2_svgrepo_com"
         android:inputType="textPassword"
-        android:background="@drawable/edittext_bg"
+        android:background="@drawable/rounded_edittext"
         android:layout_below="@id/username"
         android:layout_marginTop="20dp"
         android:padding="10dp"/>
@@ -32,15 +36,17 @@
         android:text="Done"
         android:layout_below="@id/password"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#FF6B6B"
-        android:textColor="#fff"/>
+        android:backgroundTint="#FF6B6B" android:textColor="#fff"/>
 
+    <!-- 🟢 This is the clickable SignUp text -->
     <TextView
+        android:id="@+id/signUpRedirect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don’t have any account? Sign up"
+        android:text="Don’t have an account? Sign up"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
+        android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"/>
